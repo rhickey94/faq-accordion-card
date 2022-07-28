@@ -1,11 +1,15 @@
 <script setup></script>
 
 <template>
-  <main>hi</main>
+  <main>
+    <section>hi</section>
+  </main>
 </template>
 
 <style lang="scss" scoped>
-main {
-  background-color: blue;
+section {
+  width: 327px;
+  height: 535px;
+  background-color: var(--color-card-bg);
 }
 </style>
