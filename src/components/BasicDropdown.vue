@@ -14,10 +14,21 @@ defineProps({
 
 const isActive = ref(false);
 
+function resetDropdown() {
+  [...document.querySelectorAll(".panel")].forEach((panel) => {
+    panel.style.maxHeight = null;
+  });
+  [...document.querySelectorAll(".faq-header")].forEach((header) => {
+    header.classList.remove("active");
+  });
+}
+
 function toggleDropdown(e) {
-  isActive.value = !isActive.value;
+  resetDropdown();
+  const header = e.currentTarget.querySelector(".faq-header");
+  header.classList.add("active");
+
   const panel = e.currentTarget.nextElementSibling;
-  console.log(panel);
   const { maxHeight } = window.getComputedStyle(panel);
   if (maxHeight === "0px") {
     panel.style.maxHeight = `${panel.scrollHeight}px`;
@@ -29,7 +40,7 @@ function toggleDropdown(e) {
 <template>
   <li>
     <button @click="toggleDropdown">
-      <span :class="{ active: isActive }">{{ header }}</span>
+      <span class="faq-header">{{ header }}</span>
       <span :class="{ activeArrow: isActive }" class="arrow"></span>
     </button>
     <div class="panel">
