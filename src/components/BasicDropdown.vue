@@ -44,8 +44,8 @@ li {
   border-bottom: 1px solid;
   border-color: var(--color-divider);
   padding: 15px 0;
-  color: var(--color-text);
   button {
+    color: var(--color-text);
     border: none;
     background: none;
     font: 13px "Kumbh Sans";
