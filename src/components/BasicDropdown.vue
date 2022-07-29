@@ -62,7 +62,7 @@ li {
 }
 .arrow {
   border: none;
-  background: no-repeat url(../src/assets/icon-arrow-down.svg);
+  background: no-repeat url(icon-arrow-down.svg);
   height: 7px;
   width: 10px;
   align-self: center;
