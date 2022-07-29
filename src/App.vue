@@ -31,6 +31,7 @@ const faqItems = [
 
 <template>
   <main>
+    <div class="spacer"></div>
     <section class="faq-body">
       <figure>
         <img
@@ -62,7 +63,7 @@ const faqItems = [
 <style lang="scss" scoped>
 .faq-body {
   width: 327px;
-  height: 535px;
+  // height: 535px;
   background-color: var(--color-card-bg);
   border-radius: 23px;
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.5);
@@ -88,7 +89,7 @@ figure {
 
 article {
   width: 279px;
-  margin: 0 auto;
+  margin: 0 auto 48px;
 }
 
 h1 {
@@ -101,5 +102,9 @@ ul {
   list-style-type: none;
   padding: 0;
   width: 279px;
+}
+.spacer {
+  height: 100px;
+  width: 100px;
 }
 </style>
