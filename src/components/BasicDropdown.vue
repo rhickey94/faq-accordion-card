@@ -16,7 +16,8 @@ const isActive = ref(false);
 
 function toggleDropdown(e) {
   isActive.value = !isActive.value;
-  const panel = e.target.parentNode.nextElementSibling;
+  const panel = e.currentTarget.nextElementSibling;
+  console.log(panel);
   const { maxHeight } = window.getComputedStyle(panel);
   if (maxHeight === "0px") {
     panel.style.maxHeight = `${panel.scrollHeight}px`;
