@@ -100,6 +100,10 @@ li {
     button {
       font: 14px "Kumbh Sans";
     }
+    button:hover {
+      color: var(--color-text-hover);
+      cursor: pointer;
+    }
   }
 }
 </style>

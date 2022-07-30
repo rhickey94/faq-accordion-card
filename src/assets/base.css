@@ -18,6 +18,7 @@
   --color-heading: var(--vt-c-black);
   --color-text: var(--vt-c-text-light-1);
   --color-text-active: var(--vt-c-black);
+  --color-text-hover: var(--vt-c-orange);
   --color-text-info: var(--vt-c-text-light-2);
 
   --color-arrow: var(--vt-c-orange);
