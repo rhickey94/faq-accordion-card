@@ -24,6 +24,7 @@ function resetDropdown() {
 }
 
 function toggleDropdown(e) {
+  isActive.value = !isActive.value;
   resetDropdown();
   const header = e.currentTarget.querySelector(".faq-header");
   header.classList.add("active");
@@ -92,5 +93,13 @@ li {
 
 .active {
   font-weight: bold;
+}
+
+@media screen and (min-width: 1440px) {
+  li {
+    button {
+      font: 14px "Kumbh Sans";
+    }
+  }
 }
 </style>
